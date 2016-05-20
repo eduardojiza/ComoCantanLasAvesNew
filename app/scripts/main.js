@@ -3,6 +3,7 @@ $( document ).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
 	$('.slider').slider({full_width: true});
+	$('.carousel').carousel();
 
 
 	particlesJS('particles-js',
