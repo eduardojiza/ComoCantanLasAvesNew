@@ -1,11 +1,76 @@
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
 console.log('\'Allo \'Allo!');
+
 $( document ).ready(function() {
 	$(".button-collapse").sideNav();
 	$('.parallax').parallax();
 	$('.slider').slider({full_width: true});
 	$('.carousel').carousel();
 	$('.modal-trigger').leanModal();
+	$('select').material_select();
 
+	$('#enviar').click( function() {
+
+		var nombre = $('#nombre').val();
+		var email = $('#email').val();
+		var estado = $('#estado').val();
+		var isCorrect = true;
+
+		console.log('nombre: ' + nombre);
+		console.log('email: ' + email);
+		console.log('estado: ' + estado);
+
+		if(nombre === ""){
+			Materialize.toast('Ingresa tu nombre', 4000, 'rounded');
+			isCorrect = false;
+		}
+
+		if(email === ""){
+			Materialize.toast('Ingresa tu email', 4000, 'rounded');
+			isCorrect = false;
+		}
+
+		if(estado === null){
+			Materialize.toast('Selecciona tu estado', 4000, 'rounded');
+			isCorrect = false;
+		}
+
+		if( isCorrect ){
+			var data = {
+					name : nombre,
+					email : email,
+					city : estado
+			};
+
+			var data1 = JSON.stringify( data ); 
+
+			$('#modal1').closeModal();
+			$.ajax({
+				url : 'http://comocantanlasaves.com/people',
+				data : data1, 
+				type : 'PUT',
+				contentType: 'application/json; charset=utf-8',
+				dataType: 'json',
+				success : function( json ) {
+					console.log("success: " + JSON.stringify(json));
+					if( json.operation === 'success' ) {
+						window.open( json.uri );
+					} else {
+						Materialize.toast('Error intenta más tarde', 4000, 'rounded');
+					}
+				},
+				error: function(xhr, status) {
+					console.log("error xhr: " + JSON.stringify(xhr));
+					console.log("error status: " + JSON.stringify(status));
+					Materialize.toast('Error intenta más tarde', 4000, 'rounded');
+				}
+			});
+		}
+	} );
 
 	particlesJS('particles-js',
 	  

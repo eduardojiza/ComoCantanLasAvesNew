@@ -7,27 +7,27 @@
     
     <title>Como cantan las aves</title>
 
+    <link rel="icon" href="images/icono1.png">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
-
   
+  <body>  
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper black">
-        <a href="#!" class="brand-logo">Como cantan las aves</a>
+        <a href="#" class="brand-logo"><img class="responsive-img" src="images/icono1.png"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href=""><i class="material-icons left">home</i>Home</a></li>
-          <li><a href=""><i class="material-icons left">book</i>Nosotros</a></li>
-          <li><a href=""><i class="material-icons left">library_music</i>Musica</a></li>
+          <li><a href="#"><i class="material-icons left">home</i>Home</a></li>
+          <li><a href="#segunda_seccion"><i class="material-icons left">book</i>Nosotros</a></li>
+          <li><a href="#tercera_seccion"><i class="material-icons left">library_music</i>Musica</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href=""><i class="material-icons left">home</i>Home</a></li>
-          <li><a href=""><i class="material-icons left">book</i>Nosotros</a></li>
-          <li><a href=""><i class="material-icons left">library_music</i>Musica</a></li>
+          <li><a href="#"><i class="material-icons left">home</i>Home</a></li>
+          <li><a href="#segunda_seccion"><i class="material-icons left">book</i>Nosotros</a></li>
+          <li><a href="#tercera_seccion"><i class="material-icons left">library_music</i>Musica</a></li>
         </ul>
       </div
     </nav>
@@ -36,27 +36,28 @@
   <div id="particles-js">
   </div>
 
-<div class="row">
-  <div class="slider fullscreen">
-    <ul class="slides">
-      <li>
-        <img src="images/Fondo-CCLA.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Como cantan las aves</h3>
-          <h5 class="light grey-text text-lighten-3">El espacio celeste. Una gota de sonido que se rompe. Nubes de pájaros, colores, paisajes a la deriva,  signo sobre signo en un rostro. Escritura de la vida.<br/>
-              Halfdan Rasmussen</h5>
-        </div>
-      </li>
-      <li>
-        <img src="images/fondo1.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Nuevo Contenido</h3>
-          <h5 class="light grey-text text-lighten-3">Descarga nuesto nuevo disco llamado ""</h5>
-        </div>
-      </li>
-    </ul>
-  </div>  
-</div>
+  <a name="primera_seccion"></a>
+  <div class="row">
+    <div class="slider fullscreen">
+      <ul class="slides">
+        <li>
+          <img src="images/Fondo-CCLA.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Como cantan las aves</h3>
+            <h5 class="light grey-text text-lighten-3">El espacio celeste. Una gota de sonido que se rompe. Nubes de pájaros, colores, paisajes a la deriva,  signo sobre signo en un rostro. Escritura de la vida.<br/>
+                Halfdan Rasmussen</h5>
+          </div>
+        </li>
+        <li>
+          <img src="images/fondo1.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h3>Nuevo Contenido</h3>
+            <h5 class="light grey-text text-lighten-3">Descarga nuestro nuevo disco llamado "Butterfly"</h5>
+          </div>
+        </li>
+      </ul>
+    </div>  
+  </div>
 
   <section>
         <div class="parallax-container">
@@ -65,7 +66,8 @@
         </div>
         <div class="parallax-container">
           <div class="parallax"><img src="images/fondo1.jpg"></div>
-        </div>  
+          <a name="segunda_seccion"></a>
+        </div> 
         <div class="section transparent adelante">
           <div class="row container">
                 <p class="white-text">Enfocamos nuestra pasión y talento en crear proyectos de gran relevancia, brindamos soluciones en AUDIO y PRODUCCIÓN MUSICAL con la finalidad de ofrecer experiencias mágicas y únicas</p>
@@ -84,14 +86,15 @@
         <div class="parallax-container">
           <div class="parallax"><img src="images/fondo1.jpg"></div>
         </div> 
+        <a name="tercera_seccion"></a>
         <div class="section transparent adelante">
           <div class="row container">     
             <div class="carousel">
               <a class="carousel-item" href="#"><img src="images/portada1.jpg"></a>
-              <a class="carousel-item" href="#"><img src="images/contra1.png"></a>
-              <a class="carousel-item" href="#"><img src="images/contra1.png"></a>
+              <a class="carousel-item" href="#"><img src="images/contra1.jpg"></a>
+              <a class="carousel-item" href="#"><img src="images/contra1.jpg"></a>
             </div>  
-            <p class="center-align"><a class="waves-effect waves-light btn-large modal-trigger blue" href="#modal1">Modal</a></p>
+            <p class="center-align"><a class="waves-effect waves-light btn-large modal-trigger blue" href="#modal1">Descargar</a></p>
 
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
@@ -99,39 +102,65 @@
                 <h4>Registro</h4>
                 <div class="row">
                   <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s6">
-                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                        <label for="first_name">First Name</label>
-                      </div>
-                      <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Last Name</label>
-                      </div>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="nombre" type="text" class="validate">
+                      <label for="nombre" data-error="wrong" data-success="right">Nombre</label>
                     </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                        <label for="disabled">Disabled</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Password</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
-                      </div>
-                    </div>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="email" class="validate">
+                      <label for="email" data-error="wrong" data-success="right">Email</label>
+                    </div>    
+                    <div class="input-field col s12">
+                      <select id="estado">
+                        <option value="" disabled selected>Elige tu estado</option>
+                        <option value="df">D.F.</option>
+                        <option value="Guadalajara">Guadalajara</option>
+                        <option value="Michocan">Michocan</option>
+                        <option value=Aguascalientes>Aguascalientes</option>
+                        <option value=Baja California>Baja California</option>
+                        <option value=Baja California sur>Baja California sur</option>
+                        <option value=Campeche>Campeche</option>
+                        <option value=Chiapas>Chiapas</option>
+                        <option value=Chihuahua>Chihuahua</option>
+                        <option value=Ciudad de Mexico>Ciudad de Mexico</option>
+                        <option value=Coahuila>Coahuila</option>
+                        <option value=Colima>Colima</option>
+                        <option value=Durango>Durango</option>
+                        <option value=Estado de Mexico>Estado de México</option>
+                        <option value=Guanajuato>Guanajuato</option>
+                        <option value=Guerrero>Guerrero</option>
+                        <option value=Hidalgo>Hidalgo</option>
+                        <option value=Jalisco>Jalisco</option>
+                        <option value=Michoacan>Michoacan</option>
+                        <option value=Morelos>Morelos</option>
+                        <option value=Nayarit>Nayarit</option>
+                        <option value=Nuevo Leon>Nuevo Leon</option>
+                        <option value=Oaxaca>Oaxaca</option>
+                        <option value=Puebla>Puebla</option>
+                        <option value=QuerÈtaro>QuerÈtaro</option>
+                        <option value=Quintana Roo>Quintana Roo</option>
+                        <option value=San Luis PotosÌ>San Luis PotosÌ</option>
+                        <option value=Sinaloa>Sinaloa</option>
+                        <option value=Sonora>Sonora</option>
+                        <option value=Tabasco>Tabasco</option>
+                        <option value=Tamaulipas>Tamaulipas</option>
+                        <option value=Tlaxcala>Tlaxcala</option>
+                        <option value=Veracruz>Veracruz</option>
+                        <option value=Yucatan>Yucatan</option>
+                        <option value=Zacatecas>Zacatecas</option>                        
+                        <option value="otro">Otro</option>
+                        <option value="extranjero">Extranjero</option>
+                      </select>
+                      <label>Estado</label>
+                    </div>                                                    
                   </form>
                 </div>
               </div>
               <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                <a href="#tercera_seccion" class="waves-effect waves-blue btn-flat" id="enviar">Enviar</a>
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
               </div>
             </div>
           </div>
@@ -145,15 +174,16 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Como cantan las aves</h5>
-                <p class="grey-text text-lighten-4">Decripcion</p>
+                <p class="grey-text text-lighten-4">soluciones en AUDIO y PRODUCCIÓN MUSICAL</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/user/Nebbeatmaker">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/watch?v=nY44Nl1KmGQ">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/watch?v=WKI713hF7iA">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/watch?v=7zPgekge29Y">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/watch?v=ksZU60fYJ7w">Link 5</a></li>
                 </ul>
               </div>
             </div>
@@ -161,7 +191,6 @@
           <div class="footer-copyright">
             <div class="container">
             © 2016 Whileapp
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
